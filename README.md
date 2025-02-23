@@ -85,9 +85,30 @@ chmod +x check_parallel.sh
 - Messages from Python showing which process ID (PID) is executing each task.
 - Real-time CPU and RAM usage updates.
 
+### `clear_screen_sessions.sh`
+
+This script identifies and terminates all active GNU Screen sessions, freeing up system resources.
+
+#### Features:
+- Lists all active screen sessions.
+- Terminates all detected screen sessions after confirmation.
+- Useful for managing multiple screen instances.
+
+#### Usage:
+1. Make the script executable:
+   ```bash
+   chmod +x scripts/clear_screen_sessions.sh
+   ```
+
+2. Run the script:
+   ```bash
+   ./scripts/clear_screen_sessions.sh
+   ```
+
 ## Notes
 - If `mpstat` is missing, install `sysstat` as described above.
 - You can manually monitor CPU usage with `htop` or `top` if needed.
 
 ## License
 This project is open-source and licensed under the MIT License.
+
